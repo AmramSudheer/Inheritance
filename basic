@@ -1,0 +1,10 @@
+class P:
+    def property(self):
+        print("power+gold+money+land")
+
+    def marry(self):
+        print("ADASD")
+class C(P): pass
+c= C()
+c.property()
+c.marry()
