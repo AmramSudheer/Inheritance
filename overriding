@@ -1,0 +1,12 @@
+class P:
+    def property(self):
+        print("power+gold+money+land")
+
+    def marry(self):
+        print("ADASD")
+class C(P): 
+    def marry(self):
+        print("lover")
+c= C()
+c.property()
+c.marry()
