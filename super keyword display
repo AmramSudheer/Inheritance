@@ -1,0 +1,33 @@
+class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    def display(self):
+        print("name ",self.name)
+        print("age ",self.age)
+
+class Student(Person):
+    def __init__(self,name,age,rollno,marks):
+        super().__init__(name,age)
+        self.rollno = rollno
+        self.marks = marks
+    def display(self):
+        super().display()
+        print("rollno ",self.rollno)
+        print("marks ",self.marks)
+
+class Teacher(Person):
+    def __init__(self, name, age,salary,sub):
+        super().__init__(name, age)
+        self.salary = salary
+        self.sub = sub
+    def display(self):
+        super().display()
+        print("salary",self.salary)
+        print("sub",self.sub)
+
+s = Student("sunny",24,101,100)
+t = Teacher("asdfg",34,10000,"asdsa")
+s.display()
+print()
+t.display()
