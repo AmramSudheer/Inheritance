@@ -1,0 +1,15 @@
+class P:
+    def m1(self):
+        print("parent")
+
+class C(P):
+    def m2(self):
+        print("child of parent")
+class SC(C):
+    def m3(self):
+        print("sub child of child")
+
+c = SC()
+c.m1()
+c.m2()
+c.m3()
