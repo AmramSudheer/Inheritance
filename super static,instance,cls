@@ -1,0 +1,21 @@
+class P:
+    def __init__(self):
+        print("parent")
+
+    def m1(self):
+        print("instance")
+
+    def m2(cls):
+        print("class")
+    @staticmethod
+    def m3():
+        print("static")
+
+class E(P):
+    def __init__(self):
+        
+       super().__init__()
+       super().m1()
+       super().m2()
+       super().m3()
+e = E()
