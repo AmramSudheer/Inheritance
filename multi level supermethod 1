@@ -1,0 +1,15 @@
+class A:
+    def m1(self):
+        print("a")
+class B(A):
+    def m1(self):
+        print("B")
+class C(B):
+    def m1(self):
+        print("c")
+class D(C):
+    def m1(self):
+        B.m1(self)
+
+d = D()
+d.m1()
