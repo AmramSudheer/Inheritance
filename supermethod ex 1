@@ -1,0 +1,12 @@
+class P:
+    a = 10
+    def __init__(self):
+        self.b = 200
+
+class C(P):
+    def m1(self):
+        print(super().a)
+        print(self.b)
+
+c = C()
+c.m1()
